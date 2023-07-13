@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-3</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 645px;
+            background-color: plum;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: arial;
+        }
+
+        .container {
+            background-color: white;
+            display: block;
+            width: 70%;
+            border: 1px solid gray;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .data{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            /* border: 1px solid blue; */
+            padding: 30px;
+
+        }
+
+        .img {
+            width: 65px;
+            height: 65px;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+        .firsimg{
+            /* border: 2px solid blue; */
+            display: flex;
+            align-items: flex-end;
+            height: 70px;
+        }
+        .secondimg{
+            display: flex;
+            align-items: flex-end;
+            height: 70px;
+        }
+        .thirdimg{
+            display: flex;
+            align-items: flex-end;
+            height: 70px;
+        }
+
+        small {
+            color: gray;
+        }
+
+        .details {
+            height: 80px;
+            /* border: 2px solid red; */
+            padding-left: 15px;
+            padding-top: 15px;
+            flex-basis: 150px;
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            justify-content: space-evenly;
+                
+        }
+
+        button {
+            width: 50px;
+            padding: 8px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: center;
+            box-shadow: 1px 1px 3px gray;
+        }
+        button:hover{
+            box-shadow: 2px 1px 5px black;
+            cursor: pointer;
+        }
+        .line{
+            margin: 0%;
+            padding: 0%;
+            border: 1px solid rgba(128, 128, 128, 0.212);
+            
+        }
+
+        .lastdiv{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a{
+            width:90% ;
+            text-align: center;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+
+        }
+        a:hover{
+            cursor: pointer;
+            box-shadow: 5px 5px 20px gray;
+        }
+
+        @media screen and (max-width: 600px)
+        {
+            body{
+                height: 1000px;
+                width: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+
+
+            }
+            .container{
+                color: red;
+                width: 400px;
+                border: 2px solid yellow;
+                display: block;
+
+
+            }
+            .data{
+                display: block;
+                /* border: 2px solid red; */
+                /* flex-direction: column; */
+                /* justify-content: center; */
+                width: 400px;
+                padding-bottom: 2%;
+                text-align: center;
+                /* display: flex;  */
+                /* text-align: center; */
+            }
+            .img{
+                width: 100px;
+                height: auto;
+            }
+            .firsimg,.secondimg,.thirdimg{
+                justify-content: center;
+                width: 100%;
+                height: auto;
+                border-radius: 0%;
+                /* border: 2px solid green; */
+            }
+            button{
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="data">
+            <div class="firsimg">
+                <img src="./Includes/images/img1.jpg" alt="img1" class="img img1" />
+            </div>
+            <div class="details">
+                <h4>Leonard Krasner</h4>
+                <small>@leonardkrasner</small>
+            </div>
+            <div class="firstbutton">
+                <button type="button" value="submit">view</button>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <!-- start second one -->
+        <div class="data">
+            <div class="secondimg">
+                <img src="./Includes/images/img2.jpg" alt="img2" class="img img2" />
+            </div>
+            <div class="details">
+                <h4>FLoyd Miles</h4>
+                <small>@floydmiles</small>
+            </div>
+            <div class="secondbutton">
+                <button type="button" value="submit">view</button>
+            </div>
+        </div> 
+        <div class="line"></div>
+
+        <!-- start third one -->
+        <div class="data">
+            <div class="thirdimg">
+                <img src="./Includes/images/img3.jpg" alt="img3" class="img img3" />
+            </div>
+            <div class="details">
+                <h4>Emily Selman</h4>
+                <small>@emilyselman</small>
+            </div>
+            <div class="thirdbutton">
+                <button type="button" value="submit">view</button>
+            </div>
+        </div> 
+        <div class="line"></div>
+
+        <div class="lastdiv">
+                <a href="#">View All</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
