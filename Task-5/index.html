@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: arial, ;
+    }
+
+    body {
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 655px;
+        background-color: #f3f3f3;
+    }
+
+    header {
+        display: flex;
+        /* border: 2px solid blue; */
+        justify-content: space-between;
+    }
+
+    .headerdiv {
+        display: flex;
+        /* border: 1px solid red; */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .headertext {
+        margin-left: 10px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .headerdiv,
+    .two {
+        /* border: 1px solid red; */
+        margin-right: 5px;
+        flex-basis: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    svg {
+        width: 15px;
+        fill: rgba(0, 0, 0, 0.793);
+    }
+
+    svg:hover {
+        cursor: pointer;
+    }
+
+    main {
+        /* border: 2px solid red; */
+        flex-basis: 100%;
+        height: 590px;
+        background-color: white;
+        display: flex;
+        overflow: hidden;
+
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sidebar1 {
+        padding: 10px;
+        background-color: #f3f3f3;
+        /* border: 1px solid firebrick; */
+        width: 60px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .sidebardiv1 {
+        /* border: 1px solid black; */
+        /* width: 100%; */
+        height: 18%;
+        /* width: 50px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .lastcontainer {
+        border: 1px solid rgba(128, 128, 128, 0.197);
+        border-radius: 10px;
+        display: flex;
+        width: 100%;
+    }
+
+    .aside2 {
+        width: 300px;
+        height: auto;
+        border-right: 1px solid rgba(128, 128, 128, 0.197);
+        /* border: 2px solid blue; */
+        display: flex;
+        /* padding: 10px; */
+        overflow-y: scroll;
+
+    }
+
+    ul {
+        /* border: 1px solid blue; */
+        /* border-top: 1px solid gray; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    ul li {
+        width: 100%;
+        height: 90px;
+        /* border: 1px solid green; */
+        border-radius: 5px;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .aside2 img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+
+    }
+
+    .imgdiv {
+        /* border: 1px solid yellow; */
+        display: flex;
+    }
+
+    .detail {
+        height: 45px;
+        margin-left: 10px;
+        /* border: 1px solid black; */
+        display: block;
+        align-items: center;
+        flex-grow: 1;
+        overflow: hidden;
+        overflow-y: hidden;
+    }
+
+    .time {
+        /* border: 2px solid brown; */
+        display: flex;
+        font-size: 14px;
+
+    }
+
+    small {
+        margin-top: -20px;
+        /* border: 2px solid yellowgreen; */
+        /* width: 100%; */
+        height: 30px;
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        color: gray;
+    }
+
+    h5 {
+        overflow-y: auto;
+    }
+
+    form {
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+        position: relative;
+    }
+    form img {
+        position: absolute;
+        margin-right: -220px;
+    }
+
+    input {
+        /* border: 2px solid forestgreen; */
+        border: none;
+        width: 100%;
+        height: 20px;
+        padding: 0 10px;
+    }
+
+    input:focus {
+        outline: none;
+        border-bottom: 3px solid green;
+    }
+
+    .formli {
+        height: auto;
+    }
+
+    .container2 {
+        /* border: 1px solid red; */
+        width: 80%;
+    }
+
+    .finaldiv {
+        text-align: center;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        color: gray;
+    }
+
+    .link:hover{
+        cursor: pointer;
+    }
+
+    /* Media queries */
+
+
+    @media screen and (max-width:600px) {
+        body {
+            overflow: hidden;
+        }
+
+        .container2 {
+            display: none;
+            /* border: 2px solid blue; */
+        }
+
+        .aside2 {
+            flex-grow: 1;
+        }
+
+        header {
+            display: none;
+        }
+
+        .sidebar1 {
+            display: none;
+        }
+
+        .lastcontainer {
+            border: none;
+        }
+
+        .mobileheader {
+            color: white;
+            font-family: arail;
+            padding: 20px;
+            background-color: #008069;
+            font-size: 25px;
+        }
+
+        .link:hover {
+            cursor: pointer;
+        }
+        .formli,.chatli{
+            display: none;
+        }
+
+    }
+
+    @media screen and (min-width: 601px) {
+  .mobileheader {
+    display: none;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .container {
+    padding-top: 0;
+  }
+
+  main {
+    height: 100%;
+  }
+  .container {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 655px;
+  background-color: #f3f3f3;
+  padding-top: 0;
+}
+}
+
+</style>
+
+<body>
+    <!-- The below div is only for mobile -->
+    <div class="mobileheader"
+        style="display: flex; flex-direction: column; justify-content: space-between;">
+
+
+        <!-- frist div for text and camera search and other icons -->
+        <div style="display: flex; justify-content: space-between;">
+
+            <p class="link">WhatsApp</p>
+
+            <!-- div for top icons for mobile -->
+            <div style="width: 25%; display: flex; justify-content: space-between;">
+                <img src="includes/images/Icons for mobile view/camera.png" alt="camera icon for mobile" width="30px"
+                    class="link">
+
+                <img src="includes/images/Icons for mobile view/search for mobile.png" alt="search icon for mobile"
+                    width="30px" class="link">
+
+                <img src="includes/images/Icons for mobile view/menu icon for mobile.png" alt="menu icon for mobile"
+                    width="30px" class="link">
+            </div>
+        </div>
+
+
+
+
+        <!-- 2nd div for chats and icons -->
+        <div style="display: flex; justify-content: space-between; margin-bottom: -3%; margin-top: 25px; ">
+
+            <!-- div 1 for only groups icon -->
+            <div>
+                <img src="includes/images/Icons for mobile view/groups.png" alt="groups icon for mobile" width="30px"
+                    class="link">
+            </div>
+            <div style="display: flex; flex-grow: 1; justify-content: space-between; margin-left: 50px;">
+                <p class="link" style="border-bottom: 3px solid white;">Chats</p>
+                <p class="link">Status</p>
+                <p class="link">Calls</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- below code all for medium screens -->
+    <div class="container">
+        <header>
+            <div class="headerdiv one">
+                <img src="./includes/images/whatsappicon.png" alt="whatsapp icon" class="icon icon1 link">
+                <span class="headertext link">WhatsApp</span>
+            </div>
+            <div class="headerdiv two">
+
+                <!-- minimize icon -->
+                <img src="includes/images/minimize.png" alt="minimize icon for windows" width="15px" height="9px" class="link">
+
+                <!-- maximize icon -->
+                <img src="./includes/images/maximize.png" alt="maximize icon for windows" width="15px" class="link">
+
+                <!-- close button -->
+                <img src="./includes/images/closeicon.png" alt="close icon for windows" width="17px" class="link">
+            </div>
+        </header>
+        <main>
+            <aside class="sidebar sidebar1">
+                <div class="sidebardiv1">
+
+                    <div style=" display: flex; width: 100%; justify-content: flex-start; margin-left: -10px;">
+                        <!-- this div is only for left line -->
+                        <div style="height: auto; width: 4px; border: 1px solid green; background-color: green;"></div>
+                        <!-- sidebar chat icon -->
+                        <img width="20" height="20" src="https://img.icons8.com/fluency-systems-regular/48/chat-message.png" alt="chat-message" style="margin-left: 10px;" class="link" />
+                    </div>
+
+                    <!-- sidebar Phone icon -->
+                    <img width="20" height="20" src="https://img.icons8.com/ios/50/phone--v1.png" alt="phone--v1" class="link" />
+
+                    <!-- sidebar status icon -->
+                    <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/loading-sign.png"
+                        alt="loading-sign" class="link" />
+
+                </div>
+
+                
+                <!-- div for setting and login user image-->
+                <div class="sidebardiv1">
+
+                    <!-- setting icon in sidebar -->
+                    <img width="20" height="20" src="https://img.icons8.com/ios/50/settings--v1.png"
+                        alt="settings--v1" class="link"/>
+
+                        <!-- image of user that is currently login -->
+                        <a href="myimg.html">
+                    <img src="./includes/my images/my.jpg" alt="bottom image" width="50px" height="55px"
+                        style=" border-radius: 50%;" class="link">
+                    </a>
+
+
+                </div>
+            </aside>
+
+            <div class="lastcontainer">
+                <aside class="aside2">
+                    <ul>
+                        <!-- first list chats -->
+                        <li style="height: 50px;" class="chatli">
+                            <div>
+                                <strong>Chats</strong>
+                            </div>
+                            <div style=" width: 100px;
+                            display: flex; justify-content: space-between;">
+                                <img src="https://img.icons8.com/windows/32/create-new.png" alt="create-new"
+                                    style="width: 25px; height: 25px;" class="link" />
+
+                                <img src="https://img.icons8.com/ios-glyphs/30/ellipsis.png" alt="ellipsis"
+                                    style="width: 25px; height: 25px;" class="link" />
+                            </div>
+
+                        </li>
+
+                        <!-- form li -->
+                        <li class="formli">
+                            <form>
+                                <input type="search" placeholder=" Search or start a new chat">
+                                <img width="32" height="32" src="https://img.icons8.com/windows/32/search--v1.png"
+                                    alt="search--v1" style="width: 20px; height: 20px;" class="link" />
+                            </form>
+
+                        </li>
+
+                        <!-- person 1 -->
+                        <li>
+                            <div class="imgdiv">
+                                <img src="includes/images/person3img.jpg" alt="img3">
+                            </div>
+                            <div class="detail">
+                                <h6>James</h6>
+                                <br>
+                                <small>
+                                    <img src="https://img.icons8.com/fluency-systems-regular/48/microphone--v1.png"
+                                        alt="microphone--v1" style="width: 20px; height: 20px;" />
+                                    <div style="margin-left: 5px;">
+                                        1:35
+                                    </div>
+                                </small>
+                            </div>
+                            <div class="time" style="color: green; font-weight: bold;">
+
+                                Just now
+
+                            </div>
+                        </li>
+                        <!-- person 2 -->
+                        <li>
+                            <div class="imgdiv">
+                                <img src="./includes/images/person1img.jpg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h6>Jhon kick</h6>
+                                <br>
+                                <small>
+                                    <img src="https://img.icons8.com/fluency-systems-regular/48/microphone--v1.png"
+                                        alt="microphone--v1" style="width: 20px; height: 20px;" />
+                                    <div style="margin-left: 5px;">
+                                        0:35
+                                    </div>
+                                </small>
+                            </div>
+                            <div class="time">
+                                10:06 pm
+                            </div>
+                        </li>
+
+                        <!-- person 3 -->
+                        <li>
+                            <div class="imgdiv">
+                                <img src="./includes/images/person2img.jpg">
+                            </div>
+                            <div class="detail">
+                                <h6>Alina Vicky</h6>
+                                <br>
+                                <small>
+                                    &nbsp;
+                                    Good bye
+                                </small>
+                            </div>
+                            <div class="time">
+                                Yesterday
+                            </div>
+                        </li>
+
+                        <!-- person 4 -->
+                        <li>
+                            <div class="imgdiv">
+                                <img src="./includes/images/person4img.jpg" alt="person4img">
+                            </div>
+                            <div class="detail">
+                                <h6>Sophia Doctor</h6>
+                                <br>
+                                <small>
+                                    &nbsp;
+                                    on my way <strong>.....</strong>
+                                </small>
+                            </div>
+                            <div class="time">
+                                Yesterday
+                            </div>
+                        </li>
+
+                        <!-- person 5 -->
+                        <li>
+                            <div class="imgdiv">
+                                <img src="./includes/images/person5img.jpg" alt="person4img">
+                            </div>
+                            <div class="detail">
+                                <h6>Thomas</h6>
+                                <br>
+                                <small>
+                                    &nbsp;
+                                    Will see you again!
+                                </small>
+                            </div>
+                            <div class="time">
+                                7/10/2023
+                            </div>
+                        </li>
+
+                        <!-- person 6 -->
+
+                        <li>
+                            <div class="imgdiv">
+                                <img src="./includes/images/person6img.jpg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h6>Preddy</h6>
+                                <br>
+                                <small>
+                                    <img src="https://img.icons8.com/fluency-systems-regular/48/microphone--v1.png"
+                                        alt="microphone--v1" style="width: 20px; height: 20px;" />
+                                    <div style="margin-left: 5px;">
+                                        2:03
+                                    </div>
+                                </small>
+                            </div>
+                            <div class="time">
+                                5/9/2023
+                            </div>
+                        </li>
+
+                        <!-- person 7 -->
+                        <li>
+                            <div class="imgdiv">
+                                <img src="./includes/images/person7img.jpg" alt="person7img">
+                            </div>
+                            <div class="detail">
+                                <h6>Thomas</h6>
+                                <br>
+                                <small>
+                                    &nbsp;
+                                    okay
+                                </small>
+                            </div>
+                            <div class="time">
+                                4/9/2023
+                            </div>
+                        </li>
+
+                        <!-- person 8 -->
+                        <li>
+                            <div class="imgdiv">
+                                <img src="./includes/images/person8img.jpg" alt="">
+                            </div>
+                            <div class="detail">
+                                <h6>Jemmy</h6>
+                                <br>
+                                <small>
+                                    <img src="https://img.icons8.com/fluency-systems-regular/48/picture.png"
+                                        alt="person8img" style="width: 20px; height: 20px;" />
+
+                                    <div style="margin-left: 5px;">
+                                        image
+                                    </div>
+                                </small>
+                            </div>
+                            <div class="time">
+                                3/9/2023
+                            </div>
+                        </li>
+
+                        <!-- person 8 -->
+                        <li>
+                            <div class="imgdiv">
+                                <img src="./includes/images/person9img.jpg" alt="person9img">
+                            </div>
+                            <div class="detail">
+                                <h5>Vicky</h5>
+                                <br>
+                                <small>
+                                    <img src="https://img.icons8.com/ios/50/video-call.png" alt="video-call"
+                                        style="height: 20px; width: 20px;" />
+
+                                    <div style="margin-left: 5px;">
+                                        video
+                                    </div>
+                                </small>
+                            </div>
+                            <div class="time">
+                                3/9/2023
+                            </div>
+                        </li>
+
+                    </ul>
+                </aside>
+
+                <div class="container2">
+                    <div style="display: flex;
+                    flex-direction: column; justify-content: center; align-items: center; height: 500px;">
+
+                        <i class="fa fa-whatsapp" style="color: #d6d8dc; font-size: 90px;"></i><br>
+
+                        <p style="font-family: sans-serif;">WhatsApp for Windows</p><br>
+                        <p style="color: gray;">
+
+                            Send and receive messages without keeping your phone online. <br>
+                            Use WhatsApp on up to 4 linked devices and 1 phone at the same time.
+                        </p>
+                    </div>
+
+                    <div class="finaldiv">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="128" height="128"
+                                viewBox="0,0,256,256" style="margin-right: 10px;">
+                                <g fill-opacity="0.61961" fill="#a1a1a1" fill-rule="nonzero" stroke="none"
+                                    stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                                    stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                                    font-weight="none" font-size="none" text-anchor="none"
+                                    style="mix-blend-mode: normal">
+                                    <g transform="scale(16,16)">
+                                        <path
+                                            d="M8,1c-2.20312,0 -4,1.79688 -4,4v1h-0.5c-0.82422,0 -1.5,0.67578 -1.5,1.5v5c0,0.82422 0.67578,1.5 1.5,1.5h9c0.82422,0 1.5,-0.67578 1.5,-1.5v-5c0,-0.82422 -0.67578,-1.5 -1.5,-1.5h-0.5v-1c0,-2.20312 -1.79687,-4 -4,-4zM8,2c1.66406,0 3,1.33594 3,3v1h-6v-1c0,-1.66406 1.33594,-3 3,-3zM3.5,7h9c0.28125,0 0.5,0.21875 0.5,0.5v5c0,0.28125 -0.21875,0.5 -0.5,0.5h-9c-0.28125,0 -0.5,-0.21875 -0.5,-0.5v-5c0,-0.28125 0.21875,-0.5 0.5,-0.5z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div style="display: flex; align-items: center;">
+                            End-to-end-encrypted
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
