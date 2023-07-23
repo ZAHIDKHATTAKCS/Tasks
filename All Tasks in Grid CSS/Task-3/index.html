@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3 Ludo dices</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(includes/Images/bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container{
+            width: 350px;
+            height: 250px;
+            background-color: white;
+            margin: 200px auto;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            column-gap: 10px;
+        }
+        .dice{
+            width: 80px;
+            height: 80px;
+            border: 2px solid red;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            border-radius: 10px;
+        }
+        /* .dice1{
+            width: 100px;
+        } */
+        .circle{
+            background-color: black;
+            margin: 0 auto;
+            display: flex;
+            align-self: center;
+            width: 14px;
+            height: 14px;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        .circle2{
+            margin-top: 10px;
+            align-self: flex-start;
+            justify-self: flex-start;
+        }
+        .circle3{
+            align-self: flex-end;
+            margin-bottom: 10px;
+        }
+        .circle4{
+            align-self: flex-start;
+            margin-top: 10px;
+        }
+        .circle6{
+            align-self: flex-end;
+            margin-bottom: 10px;
+        }
+        .dice4{
+            display: flex;
+            justify-content: space-between;
+        }
+        .dice:hover{
+            box-shadow: 3px 3px 20px black;
+            .circle{
+                background-color: red;
+                border: 2px solid black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- dice 1 -->
+        <div class="dice dice1">
+            <div class="circle circle1">
+            </div>
+        </div>
+
+        <!-- dice 2 -->
+        <div class="dice dice2">
+            <div class="circle circle2">
+            </div>
+            <div class="circle circle3">
+            </div>
+        </div>
+
+        <!-- dice 3 -->
+        <div class="dice dice3">
+            <div class="circle circle4">
+            </div>
+            <div class="circle circle5">
+            </div>
+            <div class="circle circle6">
+            </div>
+        </div>
+
+        <!-- dice 4 -->
+        <div class="dice dice4">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; margin-top: 10px; margin-bottom: 10px; margin-left: 10px;">
+                <div class="circle circle7">
+                </div>
+                <div class="circle circle8">
+                </div>
+            </div>
+            
+            <div style="display: flex; flex-direction: column; justify-content: space-between; margin: 10px;">
+                <div class="circle circle9">
+                </div>
+                <div class="circle circle10">
+                </div>
+            </div>
+        </div>
+
+        <!-- dice 5 -->
+        <div class="dice dice5">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; margin: 10px; ">
+                <div class="circle circle11"></div>
+                <div class="circle circle12"></div>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div class="circle"></div>
+            </div>
+            <div style="display: flex; flex-direction: column; justify-content: space-between; margin-top: 10px; margin-bottom: 10px; margin-left: 7px; ">
+                <div class="circle circle11"></div>
+                <div class="circle circle12"></div>
+            </div>
+        </div>
+
+        <!-- dice 6 -->
+        <div class="dice dice6" style="justify-content: space-between;">
+            <div style="display: flex; flex-direction: column; justify-content: space-between; margin: 5px;">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: space-between; margin: 5px;">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; justify-content: space-between; margin-top: 5px; margin-bottom: 5px; margin-right: 5px;">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+</html>

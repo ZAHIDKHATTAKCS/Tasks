@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2 in grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+            
+
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 45px 1fr 1fr;
+            /* gap: 10px; */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header{
+            background-color: #3672e0;
+            padding: 10px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 100px 100px 100px;
+            grid-template-rows: 45px;
+            
+        }
+        li{
+            list-style-type: none;
+        }
+        li a{
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .section1{
+            width: 90%;
+            margin: 0 auto;
+            background-color: #0152c7;
+            display: grid;
+            font-size: 13px;
+            grid-template-columns: 1fr 150px;
+            padding: 20px;
+        }
+        .text{
+            align-self: center;
+            margin-left: 40px;
+        }
+        .section2{
+            background-image: linear-gradient(#5170a489,#0e3a8da4);
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 25px;
+            column-gap: 30px;
+        }
+        .card{
+            background-color: blue;
+            border-radius: 10px;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 1px 1px 15px black;
+        }
+        h4{
+            padding-bottom: 10px;
+        }
+        @media screen and (max-width:600px){
+            .section1{
+                display: block;
+            }
+            .section1img{
+                margin-top: 50px;
+                margin-left: 170px;
+            }
+
+            .section2{
+                display: block;
+            } 
+            .card{
+                margin-top: 20px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+                <li style="margin-left:25px;">
+                    <a href="#">Flexbox</a>
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+        </div>
+        <section class="section1">
+            <div class="text">
+                <h3 style="padding-bottom: 10px;">Flexbox Crash Course</h3>
+                <p>
+                    This crash course was created by Brad Traversy to help you learn the basics of <br> flexbox. Flexbox is a very important and useful tool in css.
+                </p>
+            </div>
+            <div>
+                <img src="includes/img1.jpg" alt="section 1 img" width="100px" class="section1img">
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="card">
+                <h4>
+                    <img src="includes/aroow icon.png" alt="arrowicon" width="20px">
+                    Alignment & Space
+                </h4>
+                <p>
+                    A more effiecient way to lay out, align and distribute space amoung items in a container
+                </p>
+            </div>
+
+            <div class="card">
+
+                <h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" style="fill: white;"><path d="M278.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-64 64c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l9.4-9.4V224H109.3l9.4-9.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-64 64c-12.5 12.5-12.5 32.8 0 45.3l64 64c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-9.4-9.4H224V402.7l-9.4-9.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l64 64c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-9.4 9.4V288H402.7l-9.4 9.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-64-64c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l9.4 9.4H288V109.3l9.4 9.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-64-64z"/></svg>
+                    Tricky Positioning
+                </h4>
+                <p>
+                    A more effiecient way to lay out, align and distribute space amoung items in a container
+                </p>
+            </div>
+
+            <div class="card">
+                <h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" style="fill: white;"><path d="M80 0C44.7 0 16 28.7 16 64V448c0 35.3 28.7 64 64 64H304c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H80zm80 432h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H160c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                    Responsive Design
+                </h4>
+                <p>
+                    A more effiecient way to lay out, align and distribute space amoung items in a container
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
