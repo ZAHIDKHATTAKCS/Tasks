@@ -1,4 +1,4 @@
-## Task-3 Today task is to create All ludo dices 
+## Task-3 Today task is to create All ludo dices in CSS Grid
 
 
 
