@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landingpage in Tailwind Css</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @layer components {
+        .btn-primary {
+            @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="bg-purple-800 text-white flex justify-between">
+        <span class="text-xl flex items-center mx-3 font-bold cursor-pointer">Phones Mania</span>
+        <ul class="px-20 py-4 flex space-x-11 justify-end">
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">About us</li>
+            <li class="cursor-pointer">Services</li>
+            <li class="cursor-pointer">Contact Us</li>
+        </ul>
+    </nav>
+    <main class="flex  bg-purple-200">
+        <div class="main pt-20 pb-20 pl-20 ">
+            <div class="text-3xl ">
+                The Best phones in the town
+            </div>
+            
+            <p class="py-4 w-1/3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nihil rem molestias impedit quae incidunt
+                consequuntur earum doloribus, tempora nesciunt odio, porro beatae!
+            </p>
+            <div class="buttons text-white">
+                <button class="bg-purple-800 px-3 py-2 rounded-2xl hover: text-black hover:bg-white mx-4 hover:border-2 hover:border-purple-900">Buy now</button>
+                <button class="bg-purple-800 px-3 py-2 rounded-2xl hover: text-black hover:bg-white mx-4 hover:border-2 hover:border-purple-900">Contact us</button>
+            </div>
+            
+        </div>
+        <div class="flex items-center">
+            <img src="Includes/images/phone call.png" alt="phone call">
+        </div>
+    </main>
+</body>
+
+</html>
