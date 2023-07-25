@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin padding and border in TailwindCSS</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-purple-400">
+    <div class="bg-yellow-900 text-white h-10 pt-2 ">
+        <nav>
+            <ul class="flex space-x-9 mx-4">
+                <!-- here we can also use space-y for adding space horzintally but there will first li will not going with all other this the rule of tailwindCSS -->
+                <li class="cursor-pointer hover:text-green-400">Home</li>
+                <li class="cursor-pointer hover:text-green-400">Contact</li>
+                <li class="cursor-pointer hover:text-green-400">About Us</li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="h-96 mt-3">
+        <div class="mx-2 bg-yellow-700 text-white border-2 border-yellow-400">
+            this is the div for margin-2 in x-axis this will take only margin 2 from the left side and also from the right side
+        </div>
+        <div class="mx-5 border-2 border-green-700 mt-2">
+            this is first div of margin 5 in the x-axis mean that this will take margin only from left and right in x-axis
+        </div>
+        <div class="-mx-4 text-yellow-300 mt-2 bg-green-700 border-4 border-red-500">
+            This div is will be take margin in minus position mean that this div will be half inside the screen from the left side as will as in the right side because we puts its value in -
+        </div>
+    </div>
+    <div class="flex border-2 border-black p-5 bg-yellow-100">
+        <!-- div 1 -->
+        <div class="h-20 w-40 bg-red-400 mx-3 flex justify-center items-center text-white rounded-sm text-1xl">
+            Div 1 with only rounded-sm property
+        </div>
+        
+        <!-- div 2 -->
+        <div class="h-20 w-40 bg-yellow-500 mx-3 flex justify-center items-center text-red-500 rounded-md text-1xl">
+            Div 2 with only rounded-md property
+        </div>
+        
+        <!-- div 3 -->
+        <div class="h-20 w-40 bg-purple-700 mx-3 flex justify-center items-center text-yellow-400 rounded-lg text-1xl">
+            Div 3 with only rounded-lg property
+        </div>
+
+        <!-- div 4 -->
+        <div class="h-20 w-40 bg-orange-500 mx-3 flex justify-center items-center text-black rounded-xl text-1xl">
+            Div 4 with only rounded-xl property
+        </div>
+
+        <!-- div 5 -->
+        <div class="h-20 w-40 bg-violet-300 mx-3 flex justify-center items-center text-orange-600 rounded-xl text-1xl">
+            Div 4 with only rounded-xl property
+        </div>
+
+        <!-- div 6 -->
+        <div class="h-20 w-40 bg-pink-300 mx-3 flex justify-center items-center text-violet-500 rounded-full text-1xl">
+            rounded full <br>
+            property
+        </div>
+
+        
+        <!-- we can also used rounded property at the top of the div mean rounded-t-lg rounded-b-lg rounded-r-lg rounded-l-lg rounded-b-lg etc-->
+        
+    </div>
+    <h2 class="text-white text-center mt-10 ">Faizan khattak</h2>
+    
+</body>
+</html>
