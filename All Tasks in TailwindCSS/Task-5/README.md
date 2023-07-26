@@ -1,4 +1,6 @@
-## Task-2 Today task to setup TailwindCSS for the production and learn about text, mean typography text size margin padding etc
+## Task-5 Today learn about responsiveness in TailwindCSS mean learn about Break Points
 
-![Screenshot 2023-07-25 113452](https://github.com/ZAHIDKHATTAKCS/Tasks/assets/103638880/f58ae128-b771-415d-9881-89016a5f5572)
+
+
+https://github.com/ZAHIDKHATTAKCS/Tasks/assets/103638880/5cf7f4a1-250c-43fc-a8c1-44157ff73fd4
 
