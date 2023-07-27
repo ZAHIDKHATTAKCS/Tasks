@@ -1,4 +1,3 @@
-## Task-2 Today task to setup TailwindCSS for the production and learn about text, mean typography text size margin padding etc
+## Task-7 Today learn about @apply Directive in TailwindCSS 
 
-![Screenshot 2023-07-25 113452](https://github.com/ZAHIDKHATTAKCS/Tasks/assets/103638880/f58ae128-b771-415d-9881-89016a5f5572)
-
+### @apply directive is used for when we used a large number of classes in only one element just like button for the using of large numbers of classes we can easily make only one class for all these that later on we can call it instead of all
