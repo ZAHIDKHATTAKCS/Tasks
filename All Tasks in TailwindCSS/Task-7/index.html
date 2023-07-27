@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailwindCSS setup for production</title>
+    <link rel="stylesheet" href="input.css" />
+</head>
+<body>
+
+    <!-- @apply directive is used for when we used very larger numbers of classes in tailwindcss and we want to reuse it again and again we can simple change all the classes to only one class for that we can use @apply directive in our custom css file -->
+    
+    <div class=" bg-red-400 p-40 flex justify-center">
+        <button type="button" class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900">Yellow</button>
+
+        <button type="button" class="btn">Green</button>
+
+    </div>
+
+
+</body>
+</html>
