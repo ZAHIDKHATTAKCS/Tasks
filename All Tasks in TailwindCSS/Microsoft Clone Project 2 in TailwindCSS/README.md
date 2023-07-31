@@ -12,3 +12,5 @@
 ![my site md](https://github.com/ZAHIDKHATTAKCS/Tasks/assets/103638880/1ba2d03e-dd8d-4206-9308-c5493b734807)
 
 ## After clone here is website Output in small screens
+![my site sm](https://github.com/ZAHIDKHATTAKCS/Tasks/assets/103638880/f542f868-ec13-4f49-824e-347dce5f70be)
+
