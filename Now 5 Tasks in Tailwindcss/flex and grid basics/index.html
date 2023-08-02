@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in tailwindcss</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!-- flex is used for flexbox 
+         Properties of flexbox 
+         1. flex-col this is used for flex-direction:column; which change the direction of flex from row to column
+         2. by default value of flex is flex-row
+
+         3. flex-reverse-col mean 
+    -->
+
+    <h1 class="text-2xl text-center text-red-700 font-semibold">Flex</h1>
+    <div class="container flex">
+
+        <div class="items item1 border-2 border-red-600 w-32 h-32 bg-blue-200 text-center">item one </div>
+        <div class="items item2 border-2 border-red-600 w-32 h-32 bg-purple-300 text-center">item two</div>
+        <div class="items item3 border-2 border-red-600 w-32 h-32 bg-pink-300 text-center">item three</div>
+        <div class="items item4 border-2 border-red-600 w-32 h-32 bg-yellow-300 text-center">item four</div>
+        <div class="items item5 border-2 border-red-600 w-32 h-32 bg-orange-300 text-center">item five</div>
+    </div><br>
+
+    <div class="container flex flex-col">
+
+        <div class="items item1 border-2 border-red-600 w-32 h-32 bg-blue-200 text-center">item one </div>
+        <div class="items item2 border-2 border-red-600 w-32 h-32 bg-purple-300 text-center">item two</div>
+        <div class="items item3 border-2 border-red-600 w-32 h-32 bg-pink-300 text-center">item three</div>
+        <div class="items item4 border-2 border-red-600 w-32 h-32 bg-yellow-300 text-center">item four</div>
+        <div class="items item5 border-2 border-red-600 w-32 h-32 bg-orange-300 text-center">item five</div>
+    </div>
+
+    <h1 class="text-2xl text-center text-red-700 font-semibold">Grid</h1>
+
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 mt-10 border-2 border-blue-600 container mx-auto">
+        
+        <div class="items item1 border-2 border-red-600 w-32 h-32 bg-blue-200 text-center">item one </div>
+        <div class="items item2 border-2 border-red-600 w-32 h-32 bg-purple-300 text-center">item two</div>
+        <div class="items item3 border-2 border-red-600 w-32 h-32 bg-pink-300 text-center">item three</div>
+        <div class="items item4 border-2 border-red-600 w-32 h-32 bg-yellow-300 text-center">item four</div>
+        <div class="items item5 border-2 border-red-600 w-32 h-32 bg-orange-300 text-center">item five</div>
+        <div class="items item6 border-2 border-red-600 w-32 h-32 bg-purple-700 text-center">item six</div>
+
+    </div><br><br>
+</body>
+</html>

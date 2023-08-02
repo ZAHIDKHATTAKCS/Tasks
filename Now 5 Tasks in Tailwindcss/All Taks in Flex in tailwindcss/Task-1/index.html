@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in tailwindcss</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="container border-2 border-gray-300 mx-auto mt-10 h-auto">
+        <!-- header -->
+        <header class=" flex">
+
+            <!-- logo image -->
+            <div class="w-32 border-r-2 border-gray-300 border-b-2 h-32">
+                <img src="includes/images/logo.jpg" alt="logo image" class="w-full h-full hover:cursor-pointer">
+            </div>
+
+            <!-- input and search icon -->
+            <div class="flex h-32 border-b-2 border-gray-300 items-center justify-center flex-grow">
+                <div>
+                    <input type="search" placeholder=" Search here"
+                        class="h-10 border-2 border-gray-300 rounded-lg focus:border-0">
+                </div>
+                <div class="w-10 h-10 ">
+                    <img src="includes/images/search.png" alt="search icon image"
+                        class="w-full h-full hover:cursor-pointer">
+                </div>
+            </div>
+
+            <!-- user -->
+            <div class="border-l-2 border-b-2 border-gray-300 w-32 h-32">
+                <img src="includes/images/user.png" alt="user image" class="w-full h-full hover:cursor-pointer">
+            </div>
+        </header>
+
+
+
+
+
+        <!-- main -->
+
+
+        <main class="flex w-full">
+            <!-- aside -->
+            <aside
+                class="border-r-2 border-b-2 border-gray-300 w-[135px] list-none space-y-8 flex flex-col items-center p-3">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+            </aside>
+
+            <div class="main w-full bg-cover" style="background-image: url(includes/images/bg.jpg); background-position: center;">
+                
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer class="flex h-20">
+            <!-- setting in footer -->
+            <div class="w-32 flex justify-center items-center border-r-2 border-gray-300">
+                <p class="hover:cursor-pointer">Settings</p> &nbsp;
+                <img src="includes/images/settings.png" alt="setting icon" class="w-5 h-5 hover:cursor-pointer">
+            </div>
+            <div class="flex items-center justify-center flex-auto">
+                <span class="text-2xl hover:cursor-pointer">Footer</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
