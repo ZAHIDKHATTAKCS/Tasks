@@ -6,3 +6,7 @@
 
 
 #After completion, Task 1's output in tailwindcss
+
+
+https://github.com/ZAHIDKHATTAKCS/Tasks/assets/103638880/0e80c8fb-5634-4ac7-9e81-1eca9895dfe2
+
