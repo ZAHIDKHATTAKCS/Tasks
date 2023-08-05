@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5 Create WhatsApp</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+
+<body>
+    <!-- main div for mobile-->
+    <div class="main md:hidden">
+
+        <!-- header -->
+        <header class="bg-teal-700 p-3 text-white flex">
+            <!-- header text for mobile -->
+            <div class="flex grow">
+                <h1 class="text-lg font-semibold hover:cursor-pointer">WhatsApp</h1>
+            </div>
+
+            <!-- header icons for mobile -->
+            <div class="flex items-center justify-center space-x-4">
+                <img src="includes/images/Icons for mobile view/camera.png" alt="camera icon for mobile"
+                    class="w-7 hover:cursor-pointer">
+                <img src="includes/images/Icons for mobile view/search for mobile.png" alt="search icon for mobile"
+                    class="w-7 hover:cursor-pointer">
+                <img src="includes/images/Icons for mobile view/menu icon for mobile.png" alt="menu icon for mobile"
+                    class="w-7 hover:cursor-pointer">
+            </div>
+        </header>
+
+        <!-- tabs div for mobile -->
+        <div class="bg-teal-700 p-3 text-white text-lg flex space-x-20">
+            <img src="includes/images/Icons for mobile view/groups.png" alt="group icon for mobile"
+                class="hover:cursor-pointer">
+
+            <a href="#" class="hover:cursor-pointer active:underline">Chats
+
+                <div class="w-11 border-2 border-white mt-1 mb-0">
+
+                </div>
+            </a>
+
+
+            <a href="#" class="hover:cursor-pointer active:underline">Status</a>
+
+
+            <a href="#" class="hover:cursor-pointer active:underline">Calls</a>
+        </div>
+
+        <div class=" flex flex-col w-full p-3 h-[659px] overflow-scroll">
+
+            <!-- person 1 details -->
+            <div class="flex">
+                <div class="flex grow">
+                    <img src="includes/images/person1img.jpg" alt="person1 image" class="w-20 rounded-full">
+                    <div class="flex flex-col mx-5">
+                        <h1 class="text-lg font-semibold">Ihsan Ali</h1>
+                        <p class="mx-4 text-lg">Hello</p>
+                    </div>
+                </div>
+                <!-- time of message -->
+                <div class="flex justify-end text-lg">
+                    <p class="text-green-700 font-semibold">Just now</p>
+                </div>
+            </div>
+
+            <!-- person 2 details -->
+            <div class="flex my-5">
+                <div class="flex grow">
+                    <img src="includes/images/person2img.jpg" alt="person2 image" class="w-20 rounded-full">
+                    <div class="flex flex-col mx-5">
+                        <h1 class="text-lg font-semibold">Maria</h1>
+                        <p class="mx-4 text-lg">Yes...</p>
+                    </div>
+                </div>
+                <!-- time of message -->
+                <div class="flex justify-end text-lg">
+                    <p class="">Yesterday</p>
+                </div>
+            </div>
+
+            <!-- person 3 details -->
+            <div class="flex my-5">
+                <div class="flex grow">
+                    <img src="includes/images/person3img.jpg" alt="person3 image" class="w-20 rounded-full">
+                    <div class="flex flex-col mx-5">
+                        <h1 class="text-lg font-semibold">Ali</h1>
+                        <p class="flex items-center text-lg mt-2">
+                            <img src="includes/images/voice recorder.png" alt="voice recorder icon" class="w-6">
+                            3:00
+                        </p>
+                    </div>
+                </div>
+                <!-- time of message -->
+                <div class="flex justify-end text-lg">
+                    <p class="">2/08/2023</p>
+                </div>
+            </div>
+
+            <!-- person 4 details -->
+            <div class="flex my-5">
+                <div class="flex grow">
+                    <img src="includes/images/person4img.jpg" alt="person4 image" class="w-20 rounded-full">
+                    <div class="flex flex-col mx-5">
+                        <h1 class="text-lg font-semibold">Yummy</h1>
+                        <p class="flex items-center text-lg mt-2">
+                            <img src="includes/images/video camera.png" alt="voice recorder icon" class="w-6">
+                            <span class="mx-3">
+                                2:03
+                            </span>
+
+                        </p>
+                    </div>
+                </div>
+                <!-- time of message -->
+                <div class="flex justify-end text-lg">
+                    <p class="">1/08/2023</p>
+                </div>
+            </div>
+
+            <!-- person 5 details -->
+            <div class="flex">
+                <div class="flex grow">
+                    <img src="includes/images/person5img.jpg" alt="person5 image" class="w-20 rounded-full">
+                    <div class="flex flex-col mx-5">
+                        <h1 class="text-lg font-semibold">Huzaifa Khan</h1>
+                        <p class="mx-4 text-lg">I'm comming</p>
+                    </div>
+                </div>
+                <!-- time of message -->
+                <div class="flex justify-end text-lg">
+                    <p>
+                        31/7/2023
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- person 6 details -->
+            <div class="flex my-5">
+                <div class="flex grow">
+                    <img src="includes/images/person6img.jpg" alt="person6 image" class="w-20 rounded-full">
+                    <div class="flex flex-col mx-5">
+                        <h1 class="text-lg font-semibold">Iqtidar Sir</h1>
+                        <p class="flex items-center text-lg mt-2">
+                            <img src="includes/images/photo icon.png" alt="voice recorder icon" class="w-6">
+                            <span class="mx-2">Photo</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- time of message -->
+                <div class="flex justify-end text-lg">
+                    <p class="">1/08/2023</p>
+                </div>
+            </div>
+
+            <!-- person 7 details -->
+            <div class="flex">
+                <div class="flex grow">
+                    <img src="includes/images/person7img.jpg" alt="person7 image" class="w-20 rounded-full">
+                    <div class="flex flex-col mx-5">
+                        <h1 class="text-lg font-semibold">Umer Khattak</h1>
+                        <p class="mx-4 text-lg">how to resolve it...</p>
+                    </div>
+                </div>
+                <!-- time of message -->
+                <div class="flex justify-end text-lg">
+                    <p>28/7/2023</p>
+                </div>
+            </div>
+
+            <!-- person 8 details -->
+            <div class="flex my-5">
+                <div class="flex grow">
+                    <img src="includes/images/person8img.jpg" alt="person8 image" class="w-20 rounded-full">
+                    <div class="flex flex-col mx-5">
+                        <h1 class="text-lg font-semibold">Bilal Ahmad</h1>
+                        <p class="mx-4 text-lg">Class k yma..</p>
+                    </div>
+                </div>
+                <!-- time of message -->
+                <div class="flex justify-end text-lg">
+                    <p>27/7/2023</p>
+                </div>
+            </div>
+
+            <!-- person 9 details -->
+            <div class="flex my-5">
+                <div class="flex grow">
+                    <img src="includes/images/person9img.jpg" alt="person9 image" class="w-20 rounded-full">
+                    <div class="flex flex-col mx-5">
+                        <h1 class="text-lg font-semibold">Hilal Azam</h1>
+                        <p class="mx-4 text-lg">will see you again</p>
+                    </div>
+                </div>
+                <!-- time of message -->
+                <div class="flex justify-end text-lg">
+                    <p>26/7/2023</p>
+                </div>
+            </div>
+
+            <!-- person 10 details -->
+            <div class="flex my-5">
+                <div class="flex grow">
+                    <img src="includes/images/person10img.jpg" alt="person9 image" class="w-20 rounded-full">
+                    <div class="flex flex-col mx-5">
+                        <h1 class="text-lg font-semibold">Maria Khattak Mam</h1>
+                        <p class="mx-4 text-lg">you have presentation tomorrow be ready.</p>
+                    </div>
+                </div>
+                <!-- time of message -->
+                <div class="flex justify-end text-lg">
+                    <p>26/7/2023</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- main div for large screen -->
+    <div class="main text-black hidden md:block">
+
+        <!-- header -->
+        <header class="flex w-full h-11">
+
+            <!-- div for heading and icons -->
+            <div class="flex grow p-2 items-center space-x-3 text-lg">
+                <img src="includes/images/whatsappicon.png" alt="whatsapp icon" class="w-12 hover:cursor-pointer">
+                <p class="cursor-pointer">WhatsApp</p>
+            </div>
+
+            <!-- div for windows icon -->
+            <div class="flex items-center space-x-5 p-2">
+                <img src="includes/images/minimize.png" alt="minimize icon for pc" class=" hover:cursor-pointer">
+                <img src="includes/images/maximize.png" alt="maximize icon for pc" class="w-4 h-4 hover:cursor-pointer">
+                <img src="includes/images/closeicon.png" alt="close icon for pc" class="w-4 hover:cursor-pointer">
+            </div>
+
+        </header>
+
+
+        <section class="flex h-[800px] ">
+
+            <!-- aside -->
+            <aside class="w-14 p-2 h-auto">
+
+                <div class="space-y-8 flex flex-col items-center h-auto">
+                    <div class="flex">
+                        <div class="border-2 border-green-600">
+                        </div>
+                        <img src="includes/images/chaticon.png" alt="caht icon" class="w-5 mx-2 hover:cursor-pointer">
+                    </div>
+                    <img src="includes/images/phone.png" alt="phone icon" class="w-5 hover:cursor-pointer">
+                    <img src="includes/images/loader.png" alt="loader icon" class="w-6 hover:cursor-pointer">
+                </div>
+
+                <!-- div for profile pic and setting icon -->
+                <div class="mt-[550px] flex flex-col items-center space-y-5">
+                    <img src="includes/images/setttings.png" alt="setting icon" class="w-5 hover:cursor-pointer">
+                    <img src="includes/images/profile.jpg" alt="loged in user profile image"
+                        class="rounded-full hover:cursor-pointer">
+                </div>
+            </aside>
+
+
+
+            <main class="flex w-full h-[800px] rounded-lg border border-gray-300">
+
+                <!-- div of chats -->
+                <div class="w-80 h-[798px] bg-gray-100 border border-r-gray-300 ">
+
+                    <!-- chats header -->
+                    <header class="p-2">
+
+                        <div class="flex justify-between w-full">
+                            <p class="font-semibold hover:cursor-pointer">Chats</p>
+
+                            <!-- icons -->
+                            <div class="flex justify-between w-20">
+                                <img src="includes/images/edit.png" alt="edit icon" class="w-7 hover:cursor-pointer">
+
+                                <img src="includes/images/3dots.png" alt="3 dots image"
+                                    class="w-7 hover:cursor-pointer">
+                            </div>
+                        </div>
+
+                        <!-- header input for search chats -->
+                        <div class="mt-4 flex">
+                            <input type="search" placeholder=" Search or start a new chat"
+                                class="w-[300px] h-8 border border-gray-300 rounded-lg absolute">
+                            <img src="includes/images/search icon.png" alt="search icon"
+                                class="w-6 h-5 relative mx-[260px] mt-[6px]">
+                        </div>
+                    </header>
+
+                    <!-- div for chats  -->
+                    <div class="p-2 h-[710px] overflow-y-scroll">
+                        <!-- person 1 details -->
+                        <div class="flex">
+                            <div class="flex grow">
+                                <img src="includes/images/person1img.jpg" alt="person1 image" class="w-16 rounded-full">
+                                <div class="flex flex-col mx-5">
+                                    <h1 class="text-lg">Ihsan Ali</h1>
+                                    <p class="mx-4 text-sm">Hello</p>
+                                </div>
+                            </div>
+                            <!-- time of message -->
+                            <div class="flex justify-end text-lg">
+                                <p class="text-green-700 font-semibold">Just now</p>
+                            </div>
+                        </div>
+
+                        <!-- person 2 details -->
+                        <div class="flex my-5">
+                            <div class="flex grow">
+                                <img src="includes/images/person2img.jpg" alt="person2 image" class="w-16 rounded-full">
+                                <div class="flex flex-col mx-5">
+                                    <h1 class="text-lg">Maria</h1>
+                                    <p class="mx-4 text-sm">Yes...</p>
+                                </div>
+                            </div>
+                            <!-- time of message -->
+                            <div class="flex justify-end">
+                                <p>Yesterday</p>
+                            </div>
+                        </div>
+
+                        <!-- person 3 details -->
+                        <div class="flex my-5">
+                            <div class="flex grow">
+                                <img src="includes/images/person3img.jpg" alt="person3 image" class="w-16 rounded-full">
+                                <div class="flex flex-col mx-5">
+                                    <h1 class="text-lg">Ali</h1>
+                                    <p class="flex items-center mt-2 text-sm">
+                                        <img src="includes/images/voice recorder.png" alt="voice recorder icon"
+                                            class="w-5">
+                                        3:00
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- time of message -->
+                            <div class="flex justify-end">
+                                <p class="">2/08/2023</p>
+                            </div>
+                        </div>
+
+                        <!-- person 4 details -->
+                        <div class="flex my-5">
+                            <div class="flex grow">
+                                <img src="includes/images/person4img.jpg" alt="person4 image" class="w-16 rounded-full">
+                                <div class="flex flex-col mx-5">
+                                    <h1 class="text-lg">Yummy</h1>
+                                    <p class="flex items-center text-lg mt-2">
+                                        <img src="includes/images/video camera.png" alt="voice recorder icon"
+                                            class="w-5">
+                                        <span class="mx-3 text-sm">
+                                            2:03
+                                        </span>
+
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- time of message -->
+                            <div class="flex justify-end">
+                                <p>1/08/2023</p>
+                            </div>
+                        </div>
+
+                        <!-- person 5 details -->
+                        <div class="flex">
+                            <div class="flex grow">
+                                <img src="includes/images/person5img.jpg" alt="person5 image" class="w-16 rounded-full">
+                                <div class="flex flex-col mx-5 text-lg">
+                                    <h1>Huzaifa Khan</h1>
+                                    <p class="text-sm">I'm comming</p>
+                                </div>
+                            </div>
+                            <!-- time of message -->
+                            <div class="flex justify-end">
+                                <p>
+                                    31/7/2023
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <!-- person 6 details -->
+                        <div class="flex my-5">
+                            <div class="flex grow">
+                                <img src="includes/images/person6img.jpg" alt="person6 image" class="w-16 rounded-full">
+                                <div class="flex flex-col mx-5">
+                                    <h1 class="text-lg">Iqtidar Sir</h1>
+                                    <p class="flex items-center text-lg mt-2">
+                                        <img src="includes/images/photo icon.png" alt="voice recorder icon" class="w-5">
+                                        <span class="mx-2 text-sm">Photo</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- time of message -->
+                            <div class="flex justify-end">
+                                <p class="">1/08/2023</p>
+                            </div>
+                        </div>
+
+                        <!-- person 7 details -->
+                        <div class="flex">
+                            <div class="flex grow">
+                                <img src="includes/images/person7img.jpg" alt="person7 image"
+                                    class="w-16 h-16 rounded-full">
+                                <div class="flex flex-col mx-5">
+                                    <h1 class="text-lg">Umer Khattak</h1>
+                                    <p class="mx-4 text-sm">how to resolve it...</p>
+                                </div>
+                            </div>
+                            <!-- time of message -->
+                            <div class="flex justify-end">
+                                <p>28/7/2023</p>
+                            </div>
+                        </div>
+
+                        <!-- person 8 details -->
+                        <div class="flex my-5">
+                            <div class="flex grow">
+                                <img src="includes/images/person8img.jpg" alt="person8 image"
+                                    class="w-16 h-16 rounded-full">
+                                <div class="flex flex-col mx-5">
+                                    <h1 class="text-lg">Bilal Ahmad</h1>
+                                    <p class="mx-4">Class k yma..</p>
+                                </div>
+                            </div>
+                            <!-- time of message -->
+                            <div class="flex justify-end">
+                                <p>27/7/2023</p>
+                            </div>
+                        </div>
+
+                        <!-- person 9 details -->
+                        <div class="flex my-5">
+                            <div class="flex grow">
+                                <img src="includes/images/person9img.jpg" alt="person9 image"
+                                    class="w-16 h-16 rounded-full">
+                                <div class="flex flex-col mx-5">
+                                    <h1 class="text-lg">Hilal Azam</h1>
+                                    <p class="mx-4">will see you again</p>
+                                </div>
+                            </div>
+                            <!-- time of message -->
+                            <div class="flex justify-end">
+                                <p>26/7/2023</p>
+                            </div>
+                        </div>
+
+                        <!-- person 10 details -->
+                        <div class="flex my-5">
+                            <div class="flex grow">
+                                <img src="includes/images/person10img.jpg" alt="person9 image"
+                                    class="w-16 h-16 rounded-full">
+                                <div class="flex flex-col mx-5">
+                                    <h1 class="text-lg">Maria Khattak Mam</h1>
+                                    <p class="mx-4">you have presntation tomorrow be ready.</p>
+                                </div>
+                            </div>
+                            <!-- time of message -->
+                            <div class="flex justify-end">
+                                <p>26/7/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <main class="flex flex-col justify-around items-center w-full">
+
+                    <div class="flex flex-col justify-center items-center mt-52">
+                        <img src="includes/images/whatapp icon.png" alt="whatsapp icon" class="w-32">
+                        <h1>WhatsApp for Windows</h1>
+                        <p class="text-gray-400">
+                            Send and receive messages without keeping your phone online. <br>
+                            Use WhatsApp on up to 4 linked devices and 1 phone at the same time.
+                        </p>
+                    </div>
+
+                    <div class="flex">
+
+                        <span class="flex text-gray-400">
+                            <img src="includes/images/lock icon.png" alt="lock icon" class="w-6">
+    
+                            <p class="mx-4">
+                                End-to-end encrypted
+                            </p>
+                        </span>
+                    </div>
+
+                    
+                </main>
+            </main>
+        </section>
+
+    </div>
+</body>
+
+</html>

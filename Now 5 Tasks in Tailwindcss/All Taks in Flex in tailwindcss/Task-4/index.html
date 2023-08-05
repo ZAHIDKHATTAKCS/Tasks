@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4 in tailwindcss</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container border-2 border-gray-400 mx-auto mt-5 md:mt-32 w-full rounded-lg p-4 bg-gray-100 md:w-[600px]">
+
+        <!-- person 1 -->
+        <div class="block md:flex md:justify-between">
+
+            <!-- image Box -->
+            <div class="flex flex-col items-center md:flex-row ">
+                <img src="Includes/images/img1.jpg" alt="img1" class="w-24 rounded-full hover:cursor-pointer hover:border-2 hover:border-blue-500">
+
+                <!-- Name and details Box -->
+                <div class="block md:flex md:flex-col items-center mt-2 text-lg md:ml-10">
+                    <h1>Leonard Krasner</h1>
+                    <p>@leonardkrasner</p>
+                </div>
+            </div>
+
+            <!-- button div -->
+            <div class="flex justify-center mt-4 md:flex md:items-center">
+                <button type="button" value="submit"
+                    class="w-36 border-2 border-gray-300 p-2 rounded-lg shadow-lg shadow-gray-300 hover:bg-gray-200 hover:font-semibold">View</button>
+            </div>
+        </div>
+        <div class="border border-gray-200 mt-3"></div>
+
+        <!-- person 2 -->
+        <div class="block mt-5 md:flex md:justify-between">
+
+            <!-- image Box -->
+            <div class="flex flex-col items-center md:flex-row">
+                <img src="Includes/images/img2.jpg" alt="img1" class="w-24 rounded-full hover:cursor-pointer hover:border-2 hover:border-blue-500">
+
+                <!-- Name and details Box -->
+                <div class="block md:flex md:flex-col items-center mt-2 text-lg md:ml-10">
+                    <h1>Floyd Miles</h1>
+                    <p>@floydmiles</p>
+                </div>
+
+            </div>
+
+            <!-- button div -->
+            <div class="flex justify-center mt-4 md:flex md:items-center">
+                <button type="button" value="submit"
+                    class="w-36 border-2 border-gray-300 p-2 rounded-lg shadow-lg shadow-gray-300 hover:bg-gray-200 hover:font-semibold">View</button>
+            </div>
+        </div>
+
+        <div class="border border-gray-200 mt-3"></div>
+
+        <!-- person 3 -->
+        <div class="block mt-5 md:flex md:justify-between">
+
+            <!-- image Box -->
+            <div class="flex flex-col items-center md:flex-row">
+                <img src="Includes/images/img3.jpg" alt="img1" class="w-24 rounded-full hover:cursor-pointer hover:border-2 hover:border-blue-500">
+
+                <!-- Name and details Box -->
+                <div class="block md:flex md:flex-col items-center mt-2 text-lg md:ml-10">
+                    <h1>Emily Selman</h1>
+                    <p>@emilyselman</p>
+                </div>
+
+            </div>
+
+            <!-- button div -->
+            <div class="flex justify-center mt-4 md:flex md:items-center">
+                <button type="button" value="submit"
+                    class="w-36 border-2 border-gray-300 p-2 rounded-lg shadow-lg shadow-gray-300 hover:bg-gray-200 hover:font-semibold">View</button>
+            </div>
+        </div>
+
+        <div class="border border-gray-200 mt-3"></div>
+        <div class="flex justify-center items-center mt-4">
+            <button type="button" value="submit" class="w-96 border border-gray-400 rounded-lg shadow-lg shadow-gray md:grow h-10 hover:bg-gray-200 hover:font-semibold">View All</button>
+        </div>
+    </div>
+</body>
+
+</html>
