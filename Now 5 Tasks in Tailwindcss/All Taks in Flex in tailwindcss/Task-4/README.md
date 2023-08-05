@@ -1,4 +1,4 @@
-## Task-5 Today task is to create responsive Whatsapp Design for Mobile and Desktop Site
+## Task-5 Today task is to create responsive Whatsapp Design for Mobile and Desktop Site in tailwindcss
 
 ## Design view in Mobile
 
@@ -10,16 +10,8 @@
 ![whatsapp ui for pc](https://github.com/ZAHIDKHATTAKCS/Tasks/assets/103638880/792af25d-23bc-4ba5-b717-79112f1c0eaa)
 
 
-## After completion Task-5's Output
+## After completion Task-5's Output in tailwindcss
 
 
-
-https://github.com/ZAHIDKHATTAKCS/Tasks/assets/103638880/c015f295-045e-47a7-953f-b519a3637c8a
-
-
-
-
-
-
-
+https://github.com/ZAHIDKHATTAKCS/Tasks/assets/103638880/c8ee4c47-9fd8-455f-9755-9caaadd010b3
 
