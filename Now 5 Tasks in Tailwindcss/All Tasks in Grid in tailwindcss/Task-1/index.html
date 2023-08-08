@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1 in Tailwindcss</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="border-2 border-teal-700 grid grid-cols-2" style="grid-template-rows: 115px 500px 70px; grid-template-columns: 153px;">
+
+        <!-- header -->
+        <header class="grid grid-cols-2 col-span-2 border-2 border-black"
+            style="grid-template-rows: 113px; grid-template-columns: 150px 1fr 120px;">
+
+            <!-- logo div -->
+            <div class="bg-blue-300">
+                <img src="includes/images/Khattak.png" alt="logo" class="h-full w-full hover:cursor-pointer">
+            </div>
+
+            <!-- input and search icon div -->
+            <div class="flex justify-center items-center overflow-hidden"> 
+
+                <!-- input -->
+                <input type="search" class="border border-gray-300 h-12 absolute" placeholder=" Search Here">
+
+                <!-- search icon -->
+                <img src="includes/icons/search icon.png" alt="search icon" class="w-8 h-8 relative ml-[122px] hover:cursor-pointer">
+            </div>
+
+            <!-- user div -->
+            <div>
+                <img src="includes/icons/user icon.png" alt="user image" class="h-full hover:cursor-pointer">
+            </div>
+        </header>
+
+
+        <!-- aside -->
+        <aside class="bg-yellow-200 p-2">
+            <ul class="space-y-20 text-2xl flex flex-col items-center">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </aside>
+
+        <!-- main -->
+        <main class="p-2">
+
+        </main>
+
+        <!-- footer -->
+        <footer class="bg-green-200 col-span-2 grid text-2xl" style="grid-template-columns: 150px 1fr;">
+            <div class="flex justify-between items-center bor">
+                <p class=" hover:cursor-pointer">Settings</p>
+                <img src="includes/icons/settings.png" alt="setting icon" class="w-7 h-7 hover:cursor-pointer ">
+            </div>
+            <div class="flex justify-center items-center">
+                &copy; Copyright
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
