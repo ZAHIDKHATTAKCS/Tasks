@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4 in grid Tailwindcss</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!-- main container -->
+    <div
+        class="container bg-gray-100 border-2 border-gray-200 rounded-lg mx-auto mt-16 p-3 grid grid-cols-1 h-fit gap-y-5" style="grid-template-rows: 120px 120px 120px 50px">
+
+        <!-- inner grid person 1-->
+        <div class="grid border-b-2  border-gray-200 pb-2" style="grid-template-columns: 200px 150px 1fr;">
+
+            <!-- grid col 1 -->
+            <div class="flex justify-center">
+                <img src="includes/images/1.jpeg" alt="person 1 image"
+                    class="w-28 rounded-full mx-3 border-2 border-black hover:cursor-pointer hover:border-gray-400">
+            </div>
+
+            <!-- grid col 2 -->
+            <div class="flex flex-col justify-center items-start">
+                <p>
+                    <h1 class="text-lg font-semibold hover:cursor-pointer">Leonard Krasner</h1>
+                    <span class="hover:cursor-pointer">@lenoardkrasner</span>
+                    </p>
+            </div>
+
+            <!-- grid col 3 -->
+            <div class="flex justify-end items-center p-2">
+                <button type="button" value="submit"
+                    class="border-2 border-gray-200 bg-blue-400 p-2 rounded-lg text-white hover:border-2 hover:border-gray-400 hover:shadow-lg hover:shadow-gray-500 hover:font-semibold">View</button>
+            </div>
+        </div>
+
+        <!-- inner grid person 2-->
+        <div class="grid border-b-2 border-gray-200 pb-2" style="grid-template-columns: 200px 150px 1fr;">
+
+            <!-- grid col 1 -->
+            <div class="flex justify-center">
+                <img src="includes/images/2.jpeg" alt="person 2 image"
+                    class="w-28 rounded-full mx-3 border-2 border-black hover:cursor-pointer hover:border-gray-400">
+            </div>
+
+            <!-- grid col 2 -->
+            <div class="flex flex-col justify-center items-start">
+                <p>
+                    <h1 class="text-lg font-semibold hover:cursor-pointer">Emily Selman</h1>
+                    <span class="hover:cursor-pointer">@emlyselman</span>
+                    </p>
+            </div>
+
+            <!-- grid col 3 -->
+            <div class="flex justify-end items-center p-2">
+                <button type="button" value="submit"
+                    class="border-2 border-gray-200 bg-blue-400 p-2 rounded-lg text-white hover:border-2 hover:border-gray-400 hover:shadow-lg hover:shadow-gray-500 hover:font-semibold">View</button>
+            </div>
+        </div>
+
+
+        <!-- inner grid person 3-->
+        <div class="grid border-b-2 border-gray-200 pb-2" style="grid-template-columns: 200px 150px 1fr;">
+
+            <!-- grid col 1 -->
+            <div class="flex justify-center">
+                <img src="includes/images/3.jpeg" alt="person 3 image"
+                    class="w-28 rounded-full mx-3 border-2 border-black hover:cursor-pointer hover:border-gray-400">
+            </div>
+
+            <!-- grid col 2 -->
+            <div class="flex flex-col justify-center items-start">
+                <p>
+                <h1 class="text-lg font-semibold hover:cursor-pointer">Floyd Miles</h1>
+                <span class="hover:cursor-pointer">@floydmiles</span>
+                </p>
+            </div>
+
+            <!-- grid col 3 -->
+            <div class="flex justify-end items-center p-2">
+                <button type="button" value="submit"
+                    class="border-2 border-gray-200 bg-blue-400 p-2 rounded-lg text-white hover:border-2 hover:border-gray-400 hover:shadow-lg hover:shadow-gray-500 hover:font-semibold">View</button>
+            </div>
+        </div>
+
+        <button type="button" value="submit"
+                    class="border-2 border-gray-200 bg-blue-400 p-2 rounded-lg text-white hover:border-2 hover:border-gray-400 hover:shadow-lg hover:shadow-gray-500 hover:font-semibold">View All</button>
+            </div>
+    </div>
+</div>
+</body>
+
+</html>
