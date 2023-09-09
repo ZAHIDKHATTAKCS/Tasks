@@ -1,0 +1,25 @@
+How to make your tailwindcss website build for production mean if someone wants to upload his tailwindcss website to google he can't directly upload the same as it he must first build it for production here we go and start how to build it for production
+
+Steps:
+
+1. open your tailwindcss project in vscode and go to "package.json" file
+
+2. add the given command in scripts after "start":"vite", and the comma is must like
+	
+	command : "build":"vite build"
+
+	add like that 
+
+"scripts":{
+	"start":"vite",
+	"build":"vite build"
+}
+thats it
+
+after that you have to run terminal of vscode and run the given command
+
+	npm run build
+
+this command will make your tailwindcss website for production and save it to the folder named "dist" then you have to upload it.
+
+	<<<<< thanks for visit here >>>>>>
